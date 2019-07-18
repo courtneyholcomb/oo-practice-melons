@@ -1,0 +1,29 @@
+Name: Muskmelon
+Reporting code: musk
+First harvest in 1998
+Color: green
+Pairs well with mint
+Seedless
+Bestseller
+|
+Name: Casaba
+Reporting code: cas
+First harvest in 2003
+Color: orange
+Pairs well with strawberries and mint
+Has seeds
+|
+Name: Crenshaw
+Reporting code: cren
+First harvest in 1996
+Color: green
+Pairs well with proscuitto
+Has seeds
+|
+Name: Yellow Watermelon
+Reporting code: yw
+First harvest in 2013
+Color: yellow
+Pairs well with ice cream
+Has seeds
+Bestseller
