@@ -103,26 +103,65 @@ class Melon(object):
         self.worker = worker
     # Fill in the rest
     # Needs __init__ and is_sellable methods
-    def is_sellable():
+    def is_sellable(self):
         """Returns True for False based on object's ratings and origin."""
 
         # if shape and color <= 5, return False
         # if origin field 3, return False
-        if shape_rat <=5 or color_rat <=5 or origin == 'Field 3':
+        if self.shape_rat <=5 or self.color_rat <=5 or self.origin == 'Field 3':
             return False
 
         return True
 
 
-def make_melons(melon_types):
+def make_melons(harvested_file):
     """Returns a list of Melon objects."""
 
-    # Fill in the rest
+    all_melons = []
+
+    with open(harvested_file) as melon_data:
+        indiv_melons = melon_data.read().split('\n\n')
+
+    melons_ingested = []
+
+    for indiv_melon in indiv_melons:
+
+        melon_features = indiv_melon.split('\n')
+        melons_ingested.append(melon_features)
+
+
+    for melon_info in melons_ingested:
+        melon = melon_info[0]
+        type_code = melon_info[1][12:]
+        shape_rat = int(melon_info[2][14:])
+        color_rat = int(melon_info[3][14:])
+        origin = melon_info[4][15:]
+        worker = melon_info[5][13:]
+
+        melon_object = Melon(melon, type_code, shape_rat, color_rat,
+            origin, worker)
+
+
+        all_melons.append(melon_object)
+
+    return all_melons
+
+harvested_mels = make_melons("harvested_melons.txt")
 
 def get_sellability_report(melons):
     """Given a list of melon object, prints whether each one is sellable."""
 
-    # Fill in the rest 
+    # loop thru melon objects
+    for melon_obj in melons:
+    #   print "Harvested by {worker} from {origin}" end = ""
+        print(f"Harvested by {melon_obj.worker} from {melon_obj.origin} ",
+              end='')
+    #   run object.is_sellable
+        if melon_obj.is_sellable():
+            print('(CAN BE SOLD)')
+        else:
+            print('(NOT SELLABLE)')
+
 
 
 
