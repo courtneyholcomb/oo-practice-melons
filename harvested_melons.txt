@@ -1,0 +1,62 @@
+Melon 1
+Melon type: yw
+Shape rating: 8
+Color rating: 7
+Harvested from Field 2
+Harvested by Sheila
+
+Melon 2
+Melon type: yw
+Shape rating: 3
+Color rating: 4
+Harvested from Field 2
+Harvested by Sheila
+
+Melon 3
+Melon type: yw
+Shape rating: 9
+Color rating: 8
+Harvested from Field 3
+Harvested by Sheila
+
+Melon 4
+Melon type: cas
+Shape rating: 10
+Color rating: 6
+Harvested from Field 35
+Harvested by Sheila
+
+Melon 5
+Melon type: cren
+Shape rating: 8
+Color rating: 9
+Harvested from Field 35
+Harvested by Michael
+
+Melon 6
+Melon type: cren
+Shape rating: 8
+Color rating: 2
+Harvested from Field 35
+Harvested by Michael
+
+Melon 7
+Melon type: cren
+Shape rating: 2
+Color rating: 3
+Harvested from Field 4
+Harvested by Michael
+
+Melon 8
+Melon type: musk
+Shape rating: 6
+Color rating: 7
+Harvested from Field 4
+Harvested by Michael
+
+Melon 9
+Melon type: yw
+Shape rating: 7
+Color rating: 10
+Harvested from Field 3
+Harvested by Sheila
